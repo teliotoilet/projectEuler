@@ -1,16 +1,8 @@
 #!/usr/local/bin/python
+from mathTools import *
 
 #testNumber = 13195
 testNumber = 600851475143
-
-def nextPrime(primeList):
-    nextNum = max(primeList)
-    while True:
-        nextNum += 1
-        if not any([nextNum%val==0 for val in primeList]):
-            primeList.append(nextNum)
-            break
-    return primeList
 
 primeList = [2]
 primeFactors = []
