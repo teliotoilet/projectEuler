@@ -2,3 +2,4 @@ From: https://projecteuler.net/problems
 
 Problems to revisit (perhaps a slicker way to do it?):
 4: largest palindrome product
+9: works, but not super robust (more than one value of b that can form a pythagorean triplet with a given value of a)

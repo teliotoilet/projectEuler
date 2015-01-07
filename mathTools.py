@@ -12,4 +12,14 @@ def nextPrime(primeList):
             break
     return primeList
 
+# used for Sieve of Erastosthenes
+def nextPrimeFromList(primeList,candidates):
+    for nextNum in candidates:
+        if nextNum in primeList: 
+            continue
+        if not any([nextNum%val==0 for val in primeList]):
+            primeList.append(nextNum)
+            break
+    return primeList
+
 
