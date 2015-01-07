@@ -22,4 +22,17 @@ def nextPrimeFromList(primeList,candidates):
             break
     return primeList
 
+def cumProd(arr):
+    prod = 1
+    for val in arr:
+        prod *= val
+    return prod
+
+def readGrid(fname):
+    import numpy as np
+    data = []
+    with open(fname,'r') as f:
+        for line in f:
+            data.append([int(val) for val in line.split()])
+    return np.array(data)
 
